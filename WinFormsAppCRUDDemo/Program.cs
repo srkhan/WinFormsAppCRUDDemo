@@ -3,14 +3,15 @@ namespace WinFormsAppCRUDDemo
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+        [STAThread] // Indicates that the COM threading model for the application is single-threaded apartment.
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Initializes application configuration, such as high DPI settings and default font.
             ApplicationConfiguration.Initialize();
+
+            // Starts the application and opens the main form (Form1).
             Application.Run(new Form1());
         }
     }
